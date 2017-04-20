@@ -1,0 +1,12 @@
+#ifndef RGLISENCE_GLOBAL_H
+#define RGLISENCE_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(RGLISENCE_LIBRARY)
+#  define RGLISENCESHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define RGLISENCESHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // RGLISENCE_GLOBAL_H
